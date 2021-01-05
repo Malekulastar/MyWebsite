@@ -1,0 +1,161 @@
+/* Color Palette
+#146042-really dark green
+#1C9063 - dark green
+#a8ead0 - light green
+#EEEEEE - grey
+*/
+
+/* Global styles
+-------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+h1,
+h2 {
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+}
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+h3 {
+  margin: 0;
+}
+a {
+  color: #146042;
+}
+a:hover {
+  text-decoration: none;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.btn {
+  text-decoration: none;
+  background: #146042;
+  color: white;
+  padding: 10px;
+  display: inline;
+}
+
+/* Header and Footer
+-------------------------*/
+header,
+footer {
+  background: #1c9063;
+  color: #a8ead0;
+}
+/* header */
+header {
+  padding-top: 50px;
+  position: relative;
+}
+header h1,
+header h2 {
+  color: #edf2f4;
+  margin: 0;
+}
+.profile-img {
+  border-radius: 50%;
+}
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* Nav */
+nav {
+  text-align: center;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* left:0;
+  right:0; */
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Work Experience
+-------------------------*/
+.work {
+  background: #eeeeee;
+}
+h3 ~ p {
+  margin: 0;
+}
+.job-description {
+  margin-bottom: 20px;
+}
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+
+/* Education
+-------------------------*/
+.education {
+  background: linear-gradient(
+      rgba(170, 234, 209, 0.8),
+      rgba(170, 234, 209, 0.5)
+    ),
+    url(../images/suomi.JPG) fixed no-repeat;
+  background-size: cover;
+}
+p + h3 {
+  margin-top: 40px;
+}
+
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 899px) {
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+  }
+}
